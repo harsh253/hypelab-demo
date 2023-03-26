@@ -1,0 +1,24 @@
+{
+  "name": "hypelab-demo",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist",
+  "types": "build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "start": "npx tsc",
+    "serve": "npm run build && node dist/index.js",
+    "build": "rimraf ./dist && tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "rimraf": "^4.4.0",
+    "typescript": "^5.0.2"
+  }
+}
